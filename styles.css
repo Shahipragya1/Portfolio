@@ -1,27 +1,98 @@
-/* Navigation Bar Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #e4e1be;
+  color: rgb(249, 245, 245);
+  padding: 10px 0;
+  text-align: center;
+}
+.centered-paragraph {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
 .navbar {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0;
-    margin: 0;
-    display: flex; /* Arrange items side by side */
-    justify-content: center; /* Center the links horizontally */
-    background-color: #333; /* Background color for the navbar */
-  }
-  
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.navbar a {
+  color: rgb(11, 11, 11);
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+#about, #projects, #blog, #photos {
+  padding: 20px;
+  text-align: center;
+}
+
+#about p, #projects p, #blog p {
+  font-size: 18px;
+  color: #333;
+}
+
+.project {
+  display: inline-block;
+  margin: 10px;
+  transition: transform 0.3s;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+.small-image {
+  width: 300px;
+  height: 200px;
+}
+.photo-image {
+  width: 500px;
+  height: 300px;
+}
+.image {
+  width:200px;
+  height: auto; 
+  border-radius:50%;
+}
+/* .image1 {
+  width:300px;
+  height: auto;
+} 
+  */
+
+footer {
+  background-color: #e4e1be;
+  color: rgb(5, 5, 5);
+  text-align: center;
+  padding: 1px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+@media (max-width: 768px) {
   .navbar li {
-    margin: 0 15px; /* Space between links */
+    display: block;
+    margin: 10px 0;
   }
-  
-  .navbar a {
-    text-decoration: none; /* Remove underline */
-    color: white; /* Text color */
-    font-size: 18px; /* Font size */
-    padding: 10px 15px; /* Padding around the links */
-    transition: background-color 0.3s; /* Smooth hover effect */
-  }
-  
-  .navbar a:hover {
-    background-color: #360a0a; /* Change background on hover */
-    border-radius: 5px; /* Rounded corners for hover effect */
-  }
-  
+
+.project {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  margin-right: 20px;
+}
+}
