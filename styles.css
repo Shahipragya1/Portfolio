@@ -82,7 +82,13 @@ footer {
   width: 100%;
   bottom: 0;
 }
+footer a {
+  text-decoration: none; /* Remove underline from links */
+}
 
+footer a img {
+  margin: 0 10px; /* Adjust the value as needed */
+}
 @media (max-width: 768px) {
   .navbar li {
     display: block;
