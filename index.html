@@ -12,10 +12,11 @@
   <header>
     <nav>
       <ul class="navbar">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#photos">Photos</a></li>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#blog">BLOG</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#photos">PHOTOS</a></li>
+        <li><a href="#contacts">CONTACTS</a></li>
       </ul>
     </nav>
   </header>
@@ -23,22 +24,26 @@
   <!-- Main Content -->
   <main>
     <!-- About Section -->
-    <section id="about">
-      <h1>About Me</h1>
+    <section id="home" class="section">
+      <h1>ABOUT ME</h1>
       <img src="./Image/photo1.jpeg" alt="My Photo" class="image"> 
       <p style="color:#354f00;"><strong>Pragya Shahi</strong></p>   
-    <p class="centered-paragraph">Hello! 👋 
-        I'm a passionate Quality Assurance enthusiast eager to ensure software works flawlessly. 
-        With a keen eye for detail and a strong desire to learn, 
-        I specialize in identifying bugs, improving processes, and ensuring top-notch user experiences.</p>
+      <p class="intro-text">
+        Hello! 👋 I'm a passionate <span class="highlight">Quality Assurance enthusiast</span> 
+        eager to ensure software works flawlessly. With a keen eye for detail and a strong desire to learn, 
+        I specialize in <span class="highlight">identifying bugs</span>, <span class="highlight">improving processes</span>, 
+        and ensuring <span class="highlight">top-notch user experiences</span>.
+      </p>
       </section>
 
     <!-- Projects Section -->
-    <section id="projects">
-      <h2>Projects</h2>
+    <section id="projects" class="section">
+      <h2>PROJECTS</h2>
+      <ul>
+        <h2> CROP CULTIVATION RECOMMENDATION SYSTEM</h2>
+      </ul>
       <div class="project">
         <img src="./Image/AgriGuide.jpeg" alt="AgriGuide" class="small-image">
-        <p>Crop Cultivation Recommendation System</p>
         <p>AgriGuide</p>
       </div>
       <div class="project">
@@ -48,28 +53,56 @@
     </section>
 
     <!-- Blog Section -->
-    <section id="blog">
-      <h2>Blog</h2>
+    <section id="blog" class="section">
+      <h2>BLOG</h2>
       <article>
-        <h3>Creative Work</h3>
-        <a href="https://medium.com/@pragyashahi" target="_blank">
-          <img src="./Image/MediumIconBlack.png" alt="Medium Logo" style="width:24px;height:auto;">
-        </a>    
+        <h3></h3>
+    <p> Till now I haven't written any kind of blog yet. Hopefully I will be writing blogs soon.
+      Till then wait and watch.</p>
       </article>
     </section>
 
     <!-- Photos Section -->
-    <section id="photos">
-      <h2>Captures</h2>
+    <section id="photos" class="section">
+      <h2>CAPTURES</h2>
+      <div class="photos-container">
+        <div class="photo-item"> 
       <img src="./Image/photo2.jpeg" alt="Mountain Range from Suryachaur" class="photo-image">
-      <p>Mountain Range from Suryachaur </p>
-      <img src="./Image/photo3.jpeg" alt="Way to Muktinath" style="width:300px;height:auto;">
-      <p>Way to Muktinath</p>
-      <img src="./Image/photo4.jpeg" alt="Landscapes of Muktinath" style="width:300px;height:auto;">      <p> Landscapes of Muktinath </p>
+      <p>Mountain Range from Suryachaur </p> </div>
+      <div class="photo-item"> 
+      <img src="./Image/photo3.jpeg" alt="Way to Muktinath" class="photo-image">
+      <p>Way to Muktinath</p> </div>
+      <div class="photo-item"> 
+      <img src="./Image/photo4.jpeg" alt="Landscapes of Muktinath" class="photo-image" > 
+      <p> Landscapes of Muktinath </p> </div>
+      <div class="photo-item"> 
       <img src="./Image/photo5.JPG" alt="Sunset at Narayani river" class="photo-image">
       <p> Sunset at Narayani river </p>
+    </div>
+    </div>
     </section>
 
+    <!-- Contact Section -->
+<section id="contacts" class="section">
+  <h2>CONTACTS</h2>
+  <p>Let's connect! Write me down! 📩 ⬇️</p>
+  <form action="mailto:ms.pragyashahi@gmail.com" method="post" enctype="text/plain">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="phone">Phone Number:</label>
+  <input type="tel" id="phone" name="phone" required>
+    
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+    
+    <input type="submit" value="Send">
+  </form>
+</section>
+      
   </main>
 
   <!-- Footer Section -->
@@ -87,8 +120,11 @@
       <a href="https://x.com/insightshh" target="_blank">
         <img src="./Image/twitter.png" alt="Twitter Logo" style="width:24px;height:auto;">
       </a>
+      <a href="https://medium.com/@pragyashahi" target="_blank">
+        <img src="./Image/MediumIconBlack.png" alt="Medium Logo" style="width:24px;height:auto;">
+      </a>  
     </ul>
-    <p>&copy; 2023 Pragya Shahi. All rights reserved.</p>
+   </p>&copy; 2023 Pragya Shahi. All rights reserved.</p>
   </footer>
 
   <script src="scripts.js"></script>

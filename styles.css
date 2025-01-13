@@ -33,15 +33,59 @@ header {
 main {
   padding: 20px;
 }
-
-#about, #projects, #blog, #photos {
+#home, #projects, #blog, #photos, #contacts {
   padding: 20px;
   text-align: center;
 }
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-#about p, #projects p, #blog p {
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.intro-text {
+  max-width: 600px;
+  margin: 20px auto;
   font-size: 18px;
+  line-height: 1.6;
   color: #333;
+  text-align: left;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.intro-text:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.highlight {
+  color: #354f00;
+  font-weight: bold;
+  background: #e4e1be;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+.image {
+  width: 150px; /* Adjust the size as needed */
+  height: 150px; /* Ensure the height is the same as the width */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image covers the entire area */
+}
+.section h1 {
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.5rem;
+}
+.section h2 {
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.5rem;
 }
 
 .project {
@@ -50,44 +94,134 @@ main {
   transition: transform 0.3s;
 }
 
-.project:hover {
-  transform: scale(1.05);
+.projects-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping to the next line if necessary */
+  gap: 20px; /* Adds space between the items */
+}
+
+.project {
+  flex: 1 1 calc(33.333% - 20px); /* Adjusts the width of each project item */
+  box-sizing: border-box; /* Ensures padding and border are included in the width */
 }
 
 .small-image {
-  width: 300px;
-  height: 200px;
+  width: 50%; /* Ensures the image takes up the full width of the parent div */
+  height: auto; /* Maintains the aspect ratio of the image */
 }
-.photo-image {
-  width: 500px;
-  height: 300px;
+/* Photos Section Styling */
+.photos-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-content: center;
 }
-.image {
-  width:200px;
-  height: auto; 
-  border-radius:50%;
-}
-/* .image1 {
-  width:300px;
-  height: auto;
-} 
-  */
 
+.photo-item {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.photo-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.photo-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.photo-item p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+@media (max-width: 1024px) {
+  .photos-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .photos-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Contact Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+form input, form textarea {
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form input[type="submit"] {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #354f00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+  background-color: #2c3e00;
+}
 footer {
   background-color: #e4e1be;
   color: rgb(5, 5, 5);
   text-align: center;
-  padding: 1px 0;
+  padding: 10px 0; /* Adjusted padding for better spacing */
   position: fixed;
   width: 100%;
   bottom: 0;
+  height: auto; /* Adjust height to fit content */
 }
+
+footer p {
+  margin: 0; /* Remove default margin */
+}
+
 footer a {
   text-decoration: none; /* Remove underline from links */
 }
 
 footer a img {
   margin: 0 10px; /* Adjust the value as needed */
+}
+
+/* Ensure there is enough space at the bottom of the main content */
+body {
+  margin-bottom: 60px; /* Adjust this value if needed */
 }
 @media (max-width: 768px) {
   .navbar li {
