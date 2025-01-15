@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pragya Shahi</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
   <meta name="description" content="Pragya Shahi's portfolio website showcasing projects, blog, and photos. A passionate Quality Assurance enthusiast.">
 </head>
 <body>
@@ -15,6 +16,7 @@
         <li><a href="#home">HOME</a></li>
         <li><a href="#blog">BLOG</a></li>
         <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#skills">SKILLS</a></li>
         <li><a href="#photos">PHOTOS</a></li>
         <li><a href="#contacts">CONTACTS</a></li>
       </ul>
@@ -51,6 +53,144 @@
         <p>AgriGuide Login</p>
       </div>
     </section>
+     <!--===================== SKILLS =====================-->
+
+<section class="skills section" id="skills">
+  <h2 class="section__title">SKILLS</h2>
+
+  <div class="skills__container container grid">
+    <div>
+      <!--==================== Skill 1 =================-->
+      <div class="skills__content skills__open">
+        <div class="skills__header">
+          <i class="fas fa-pencil-ruler skills__icon"></i>
+
+          <div>
+            <h1 class="skills__title">Programming Languages</h1>
+          </div>
+
+          <i class="uil uil-angle-down skills__arrow"></i>
+        </div>
+
+        <div class="skills__list grid">
+          <div class="skills__data">
+            <div class="skills__titles">
+              <h3 class="skills__name">C</h3>
+            </div>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__titles">
+              <h3 class="skills__name">Java</h3>
+            </div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__titles">
+              <h3 class="skills__name">JavaScript</h3>
+            </div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__titles">
+              <h3 class="skills__name">Python</h3>
+            </div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__titles">
+              <h3 class="skills__name">TypeScript</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--==================== Skill 2 =================-->
+      <div class="skills__content skills__close">
+        <div class="skills__header">
+          <i class="fas fa-code skills__icon"></i>
+          <div>
+            <h1 class="skills__title">IT Constructs</h1>
+          </div>
+
+          <i class="uil uil-angle-down skills__arrow"></i>
+        </div>
+
+        <div class="skills__list grid">
+          <div class="skills__data">
+            <div class="skills__titles">
+              <h3 class="skills__name">DBMS</h3>
+            </div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__titles">
+              <h3 class="skills__name">DS & Algorithms</h3>
+            </div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__titles">
+              <h3 class="skills__name">OOP</h3>
+            </div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__titles">
+              <h3 class="skills__name">OS</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <!--==================== Skill 3 =================-->
+      <div class="skills__content skills__close">
+        <div class="skills__header">
+          <i class="fas fa-swatchbook skills__icon"></i>
+          <div>
+            <h1 class="skills__title">Technologies</h1>
+          </div>
+
+          <i class="uil uil-angle-down skills__arrow"></i>
+        </div>
+
+        <div class="skills__list grid">
+          <div class="skills__data">
+            <div class="skills__titles">
+              <h3 class="skills__name">Git</h3>
+            </div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__titles">
+              <h3 class="skills__name">MongoDB</h3>
+            </div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__titles">
+              <h3 class="skills__name">MySQL</h3>
+            </div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__titles">
+              <h3 class="skills__name">NextJs</h3>
+            </div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__titles">
+              <h3 class="skills__name">NodeJs</h3>
+            </div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__titles">
+              <h3 class="skills__name">Tailwind</h3>
+            </div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__titles">
+              <h3 class="skills__name">MySQL</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- Blog Section -->
     <section id="blog" class="section">
@@ -87,16 +227,16 @@
   <h2>CONTACTS</h2>
   <p>Let's connect! Write me down! 📩 ⬇️</p>
   <form action="mailto:ms.pragyashahi@gmail.com" method="post" enctype="text/plain">
-    <label for="name">Name:</label>
+    <label for="name" class="left-align">Name:</label>
     <input type="text" id="name" name="name" required>
     
-    <label for="email">Email:</label>
+    <label for="email" class="left-align">Email:</label>
     <input type="email" id="email" name="email" required>
     
-    <label for="phone">Phone Number:</label>
+    <label for="phone" class="left-align">Phone Number:</label>
   <input type="tel" id="phone" name="phone" required>
     
-    <label for="message">Message:</label>
+    <label for="message" class="left-align">Message:</label>
     <textarea id="message" name="message" rows="4" required></textarea>
     
     <input type="submit" value="Send">

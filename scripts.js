@@ -18,3 +18,11 @@ const navbar = document.querySelector('.navbar');
 navToggle.addEventListener('click', () => {
   navbar.classList.toggle('navbar-open');
 });
+
+document.querySelectorAll('.skills__header').forEach(header => {
+  header.addEventListener('click', () => {
+    const content = header.parentElement;
+    content.classList.toggle('skills__open');
+    content.classList.toggle('skills__close');
+  });
+});

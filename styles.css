@@ -33,7 +33,7 @@ header {
 main {
   padding: 20px;
 }
-#home, #projects, #blog, #photos, #contacts {
+#home, #projects, #skills, #blog, #photos, #contacts {
   padding: 20px;
   text-align: center;
 }
@@ -87,7 +87,11 @@ body {
   border-bottom: 2px solid #333;
   padding-bottom: 0.5rem;
 }
-
+.left-align {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+}
 .project {
   display: inline-block;
   margin: 10px;
@@ -104,17 +108,112 @@ body {
   flex: 1 1 calc(33.333% - 20px); /* Adjusts the width of each project item */
   box-sizing: border-box; /* Ensures padding and border are included in the width */
 }
-
-.small-image {
-  width: 50%; /* Ensures the image takes up the full width of the parent div */
-  height: auto; /* Maintains the aspect ratio of the image */
+/* Skills Section Styling */
+.skills__content {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.skills__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 0;
+}
+
+.skills__header:hover {
+  color: #007bff;
+}
+
+.skills__list {
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.skills__open .skills__list {
+  display: grid;
+  max-height: 1000px; /* Adjust as needed */
+}
+
+.skills__close .skills__list {
+  max-height: 0;
+}
+
+.skills__arrow {
+  transition: transform 0.3s ease-in-out;
+}
+
+.skills__open .skills__arrow {
+  transform: rotate(180deg);
+}
+
+.skills__data {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.skills__titles {
+  margin-left: 10px;
+}
+
+.skills__name {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .skills__container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .skills__content {
+    padding: 15px;
+  }
+
+  .skills__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .skills__titles {
+    margin-left: 0;
+  }
+}
+
 /* Photos Section Styling */
 .photos-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   justify-content: center;
+}
+
+.small-image {
+  width: 50%; /* Ensures the image takes up the full width of the parent div */
+  height: auto; /* Maintains the aspect ratio of the image */
+}
+
+/* Photos Section Styling */
+.photos-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-content: center;
+}
+
+.small-image {
+  width: 50%; /* Ensures the image takes up the full width of the parent div */
+  height: auto; /* Maintains the aspect ratio of the image */
 }
 
 .photo-item {
