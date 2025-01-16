@@ -3,6 +3,22 @@ body {
   margin: 0;
   padding: 0;
 }
+.logo{
+  font-size: 20px;
+  color: rgb(10, 10, 10);
+  font-weight: 600;
+  margin-right: auto; /* Ensures the logo is aligned to the left */
+  transition: 0.3s ease;
+}
+.logo:hover{
+  color: orangered;
+  text-shadow: 0 0 25px orangered,
+              0 0 25px orangered;
+    transform: scale(1.1);
+ }
+ span {
+  color: orangered;
+ }
 
 header {
   background-color: #e4e1be;
@@ -26,10 +42,18 @@ header {
 }
 
 .navbar a {
-  color: rgb(11, 11, 11);
-  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  font-weight: 500;
+  margin: 0 20px;
+  border-bottom: 3px solid transparent;
+  transition: 0.3s ease;
 }
-
+.navbar a:hover,
+.navbar a.active {
+  color: orangered;
+  border-bottom: 3px solid orangered;
+}
 main {
   padding: 20px;
 }
