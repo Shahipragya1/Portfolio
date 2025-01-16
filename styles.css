@@ -7,8 +7,9 @@ body {
   font-size: 20px;
   color: rgb(10, 10, 10);
   font-weight: 600;
-  margin-right: auto; /* Ensures the logo is aligned to the left */
-  transition: 0.3s ease;
+  position: absolute; /* Position the logo absolutely */
+  left: 20px; /* Adjust the left position as needed */
+    transition: 0.3s ease;
 }
 .logo:hover{
   color: orangered;
