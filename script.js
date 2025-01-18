@@ -27,3 +27,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
   });
   
+  document.getElementById('menu-toggle').addEventListener('click', function() {
+    document.getElementById('navbar-menu').classList.toggle('show');
+  });
