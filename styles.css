@@ -31,14 +31,7 @@ header {
 span {
   color: purple;
 }
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #333;
-  padding: 10px 20px;
-  position: relative;
-}
+
 
 .menu-toggle {
   display: none;
@@ -56,29 +49,36 @@ span {
   height: 3px;
   background-color: white;
 }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
 
 .navbar-menu {
   list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
-  text-align: right;
-  margin-left: auto; /* Align the menu to the right */
 }
-
 .navbar-menu li {
   margin: 0 10px;
 }
 
 .navbar-menu a {
-  color: rgb(246, 235, 235);
+  color: rgb(8, 8, 8);
   text-decoration: none;
   padding: 10px;
+  text-align:left;
 }
 
-.navbar-menu a:hover {
-  background-color: #ac5f12;
-  border-radius: 5px;
+.navbar-toggle {
+  display: none;
+  color: rgb(18, 18, 18);
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 /* Responsive styles */
@@ -88,36 +88,17 @@ span {
     position: relative;
   }
 
-  .navbar-menu {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 0;
-    right: 100%;
-    width: 250px;
-    height: 100%;
-    background-color: #f5f2f2;
-    padding-top: 60px;
-    transition: right 0.3s ease;
-  }
   @media (max-width: 768px) {
     .navbar-menu {
       right: 0;
+      width: 100%;
     }
   }
-
-  .navbar-menu.show {
-    right: 0;
-  }
-
   .navbar-menu li {
-    margin: 20px 0;
+    text-align: center;
+    margin: 10px 0;
   }
 
-  .navbar-menu a:hover {
-    background-color: #787474;
-    border-radius: 5px;
-  }
   
 }
 main {
